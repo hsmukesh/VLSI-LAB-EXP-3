@@ -1,16 +1,16 @@
-Exp3:SIMULATION AND IMPLEMENTATION OF MULTIPLIER
+# Exp No 3:SIMULATION AND IMPLEMENTATION OF MULTIPLIER #
 
-Date:
+**Date:**
 
 
-AIM: 
+**AIM:**
  To simulate and synthesis multiplier using Xilinx ISE.
 
-APPARATUS REQUIRED:
+**APPARATUS REQUIRED:**
 Xilinx 14.7
 Spartan6 FPGA
   
-PROCEDURE:
+**PROCEDURE:**
 STEP:1  Start  the Xilinx navigator, Select and Name the New project.
 STEP:2  Select the device family, device, package and speed.       
 STEP:3  Select new source in the New Project and select Verilog Module as the Source type.                       
@@ -23,15 +23,16 @@ STEP:9  In the Design Object List Window, enter the pin location for each pin in
 STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here.
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
-Logic Diagram
-2 bit Multiplier
+**Logic Diagram**
 
-LOGIC DIAGRAM:
+**2 Bit Multiplier**
+
+**LOGIC DIAGRAM:**
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-3/assets/6987778/7713750f-65e6-41c0-8082-5005eac4031c)
 
 
-VERILOG CODE:
+**VERILOG CODE:**
 ```
 module ha(a,b,sum,carry);
 input a,b;
@@ -53,19 +54,19 @@ ha ha2(w3,w4,c[2],c[3]);
 endmodule
 ```
 
-OUTPUT:
+**OUTPUT:**
 
 ![image](https://github.com/hsmukesh/VLSI-LAB-EXP-3/assets/159506763/7785b83f-a857-46c7-bedc-6b902c98ccfc)
 
 
-4 Bit Multiplier
+**4 Bit Multiplier**
 
-LOGIC DIAGRAM:
+**LOGIC DIAGRAM:**
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-3/assets/6987778/d95215dd-8cf1-4e08-93cc-96adfdd7fbdc)
 
 
-VERILOG CODE:
+**VERILOG CODE:**
 ```
 module fulladder(a,b,c,sum,carry);
 input a,b,c;
@@ -98,7 +99,7 @@ fa fa8(w[11],x[3]&y[3],w[17],z[6],z[7]);
 endmodule
 ```
 
-OUTPUT:
+**OUTPUT:**
 
 ![image](https://github.com/hsmukesh/VLSI-LAB-EXP-3/assets/159506763/510f2e3e-15b9-4fe7-8a13-1ee28b9d59c6)
 
